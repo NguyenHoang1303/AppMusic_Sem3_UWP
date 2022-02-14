@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="AppMusic.Pages.AppMs"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppMusic.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <NavigationView x:Name="DemoTransaction" IsPaneOpen="False"  Loaded="DemoTransaction_Loaded" SelectionChanged="DemoTransaction_SelectionChanged">
+        <NavigationView.MenuItems>
+            <NavigationViewItem Icon="Audio" Content="Danh sách bài hát" Tag="listSong" />
+            <NavigationViewItem Icon="Add" Content="Thêm bài hát mới" Tag="createSong" />
+        </NavigationView.MenuItems>
+        <Frame x:Name="contentFrame" Navigated="contentFrame_Navigated"/>
+    </NavigationView>
+</Page>
