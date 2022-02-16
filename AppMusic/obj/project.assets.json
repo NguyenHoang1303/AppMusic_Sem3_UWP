@@ -2,6 +2,17 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.17763": {
+      "MahApps.Metro.IconPacks.Material/4.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -318,6 +329,17 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
+      "MahApps.Metro.IconPacks.Material/4.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -813,6 +835,17 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm-aot": {
+      "MahApps.Metro.IconPacks.Material/4.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -1309,6 +1342,17 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
+      "MahApps.Metro.IconPacks.Material/4.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -1805,6 +1849,17 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
+      "MahApps.Metro.IconPacks.Material/4.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -2300,6 +2355,17 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x64-aot": {
+      "MahApps.Metro.IconPacks.Material/4.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -2796,6 +2862,17 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
+      "MahApps.Metro.IconPacks.Material/4.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -3291,6 +3368,17 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x86-aot": {
+      "MahApps.Metro.IconPacks.Material/4.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -3788,6 +3876,63 @@
     }
   },
   "libraries": {
+    "MahApps.Metro.IconPacks.Material/4.11.0": {
+      "sha512": "ZCuuxWHvXxl39XBYXk4PCMUVtw1pevT5AE1qsj7VRy2tRtDYbzHWYW0FbnH+Vf0rP7BogZrRlKns3zFEkDEjFQ==",
+      "type": "package",
+      "path": "mahapps.metro.iconpacks.material/4.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MahApps.Metro.IconPacks.Core.dll",
+        "lib/net45/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/net45/MahApps.Metro.IconPacks.Core.xml",
+        "lib/net45/MahApps.Metro.IconPacks.Material.dll",
+        "lib/net45/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/net45/MahApps.Metro.IconPacks.Material.xml",
+        "lib/net46/MahApps.Metro.IconPacks.Core.dll",
+        "lib/net46/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/net46/MahApps.Metro.IconPacks.Core.xml",
+        "lib/net46/MahApps.Metro.IconPacks.Material.dll",
+        "lib/net46/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/net46/MahApps.Metro.IconPacks.Material.xml",
+        "lib/net47/MahApps.Metro.IconPacks.Core.dll",
+        "lib/net47/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/net47/MahApps.Metro.IconPacks.Core.xml",
+        "lib/net47/MahApps.Metro.IconPacks.Material.dll",
+        "lib/net47/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/net47/MahApps.Metro.IconPacks.Material.xml",
+        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Core.dll",
+        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Core.xml",
+        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Material.dll",
+        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Material.xml",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.dll",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.xml",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Material.dll",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Material.xml",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.dll",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.xml",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.dll",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.pri",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.pri",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material/MahApps.Metro.IconPacks.Material.xr.xml",
+        "logo_small.png",
+        "mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512",
+        "mahapps.metro.iconpacks.material.nuspec"
+      ]
+    },
     "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
       "sha512": "RvrUhS53oMQfDRhz8CnV+d2RXnvyc7mqBJtcXpWhIHI36jEZwepOke4wLfbOQQzpyVauFWGu+jkQSzYNxpHJQA==",
       "type": "package",
@@ -8253,6 +8398,7 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
+      "MahApps.Metro.IconPacks.Material >= 4.11.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
       "Newtonsoft.Json >= 13.0.1"
     ]
@@ -8297,6 +8443,10 @@
     "frameworks": {
       "uap10.0.17763": {
         "dependencies": {
+          "MahApps.Metro.IconPacks.Material": {
+            "target": "Package",
+            "version": "[4.11.0, )"
+          },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.12, )"

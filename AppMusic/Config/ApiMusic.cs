@@ -1,6 +1,6 @@
 ﻿namespace AppMusic.Config
 {
-    class ApiMusic
+    public class ApiMusic
     {
         public static string mediaType = "applicaion/json";
         public static string apiDoman = "https://music-i-like.herokuapp.com";

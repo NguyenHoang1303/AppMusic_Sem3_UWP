@@ -8,12 +8,14 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <NavigationView x:ConnectionId='2' x:Name="DemoTransaction" IsPaneOpen="False"                                                                                     >
+    <NavigationView x:ConnectionId='2' x:Name="DemoTransaction" IsPaneOpen="False"                                                                                >
         <NavigationView.MenuItems>
-            <NavigationViewItem Icon="Audio" Content="Danh sách bài hát" Tag="listSong" />
-            <NavigationViewItem Icon="Add" Content="Thêm bài hát mới" Tag="createSong" />
+            <NavigationViewItem Icon="Audio" Content="Danh sách bài hát" Tag="ListSong" />
+            <NavigationViewItem Icon="Play" Content="Danh sách bài hát của tôi" Tag="MySong" />
+            <NavigationViewItem Icon="Add" Content="Thêm bài hát mới" Tag="CreateSong" />
+            <NavigationViewItem Icon="OtherUser" Content="Thông tin tài khoản" Tag="Account" />
         </NavigationView.MenuItems>
-        <Frame x:ConnectionId='3' x:Name="contentFrame"                                   />
+        <Frame x:ConnectionId='3' x:Name="contentApp"                                   />
     </NavigationView>
 </Page>
 

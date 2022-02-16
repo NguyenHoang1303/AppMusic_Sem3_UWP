@@ -13,5 +13,6 @@
         public string createdAt { get; set; }
         public string updatedAt { get; set; }
         public int status { get; set; }
+
     }
 }

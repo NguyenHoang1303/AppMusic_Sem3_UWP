@@ -8,11 +8,13 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <NavigationView x:Name="DemoTransaction" IsPaneOpen="False"  Loaded="DemoTransaction_Loaded" SelectionChanged="DemoTransaction_SelectionChanged">
+    <NavigationView x:Name="DemoTransaction" IsPaneOpen="False"  Loaded="DemoTransaction_Loaded" SelectionChanged="SelectPage_SelectionChanged">
         <NavigationView.MenuItems>
-            <NavigationViewItem Icon="Audio" Content="Danh sách bài hát" Tag="listSong" />
-            <NavigationViewItem Icon="Add" Content="Thêm bài hát mới" Tag="createSong" />
+            <NavigationViewItem Icon="Audio" Content="Danh sách bài hát" Tag="ListSong" />
+            <NavigationViewItem Icon="Play" Content="Danh sách bài hát của tôi" Tag="MySong" />
+            <NavigationViewItem Icon="Add" Content="Thêm bài hát mới" Tag="CreateSong" />
+            <NavigationViewItem Icon="OtherUser" Content="Thông tin tài khoản" Tag="Account" />
         </NavigationView.MenuItems>
-        <Frame x:Name="contentFrame" Navigated="contentFrame_Navigated"/>
+        <Frame x:Name="contentApp" Navigated="contentFrame_Navigated"/>
     </NavigationView>
 </Page>

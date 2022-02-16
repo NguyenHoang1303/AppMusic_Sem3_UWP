@@ -14,6 +14,7 @@ namespace AppMusic.Pages
         public AppMs()
         {
             this.InitializeComponent();
+            contentApp.Navigate(typeof(Pages.ListSong.Index));
         }
 
         private void DemoTransaction_Loaded(object sender, RoutedEventArgs e)
@@ -21,14 +22,37 @@ namespace AppMusic.Pages
 
         }
 
-        private void DemoTransaction_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        private void SelectPage_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
-
+            if (args.IsSettingsSelected)
+            {
+                //contentFrame.Navigate(typeof(SampleSettingsPage));
+            }
+            else
+            {
+                var selectedItem = args.SelectedItem as NavigationViewItem;
+                switch (selectedItem.Tag.ToString())
+                {
+                    case "ListSong":
+                        contentApp.Navigate(typeof(Pages.ListSong.Index));
+                        break; 
+                    case "MySong":
+                        contentApp.Navigate(typeof(Pages.MyListSong.Index));
+                        break;
+                    case "CreateSong":
+                        contentApp.Navigate(typeof(Pages.CreatSong.Index));
+                        break;
+                    case "Account":
+                        contentApp.Navigate(typeof(Pages.AccountInfo.Index));
+                        break;
+                }
+            }
         }
 
         private void contentFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
         }
+
     }
 }

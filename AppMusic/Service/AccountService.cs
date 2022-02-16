@@ -16,43 +16,30 @@ namespace AppMusic.Service
         public static string tokenUserFile = "dataUserLogin.txt";
         public async Task<bool> Register(Account account)
         {
-            var jsonString = JsonConvert.SerializeObject(account);
+            string jsonString = JsonConvert.SerializeObject(account);
             HttpClient httpClient = new HttpClient();
             HttpContent contentToSend = new StringContent(jsonString, Encoding.UTF8, ApiMusic.mediaType);
-            var result = await httpClient.PostAsync($"{ ApiMusic.apiDoman }{ApiMusic.accountPathRegisterAndInfo}", contentToSend);
-            if (result.StatusCode == System.Net.HttpStatusCode.Created)
-            {
-                // good case
-                return true;
-            }
-            else
-            {
-                // bad case
-                return false;
-            }
+            HttpResponseMessage result = await httpClient.PostAsync($"{ ApiMusic.apiDoman }{ApiMusic.accountPathRegisterAndInfo}", contentToSend);
+            return result.StatusCode == System.Net.HttpStatusCode.Created;
         }
 
         public async Task<Credential> Login(string Email, string Password)
         {
-            var parameters = new Dictionary<string, string>();
-            parameters.Add("email", Email);
-            parameters.Add("password", Password);
+            var parameters = new Dictionary<string, string>
+            {
+                { "email", Email },
+                { "password", Password }
+            };
             var encodedContent = new FormUrlEncodedContent(parameters);
+            Debug.WriteLine(encodedContent);
             using (HttpClient httpClient = new HttpClient())
             {
                 var result = await httpClient.PostAsync($"{ ApiMusic.apiDoman }{ApiMusic.accountPathLogin}", encodedContent);
                 var content = await result.Content.ReadAsStringAsync();
-                if (result.StatusCode == System.Net.HttpStatusCode.OK)
-                {
-                    SaveToken(content);
-                    Credential obj = JsonConvert.DeserializeObject<Credential>(content);
-                    return obj;
-                }
-                else
-                {
-                    Debug.WriteLine("Error 500");
-                    return null;
-                }
+                if (result.StatusCode != System.Net.HttpStatusCode.OK) return null;
+                SaveToken(content);
+                Credential obj = JsonConvert.DeserializeObject<Credential>(content);
+                return obj;
             }
         }
 
@@ -69,12 +56,12 @@ namespace AppMusic.Service
             {
                 StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
                 StorageFile sampleFile = await storageFolder.GetFileAsync(tokenUserFile);
-                string token = await FileIO.ReadTextAsync(sampleFile);
-                Credential credential = JsonConvert.DeserializeObject<Credential>(token);
-                return credential;
+                var token = await FileIO.ReadTextAsync(sampleFile);
+                return JsonConvert.DeserializeObject<Credential>(token);
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return null;
             }
         }
@@ -86,32 +73,20 @@ namespace AppMusic.Service
                 httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
                 var result = await httpClient.GetAsync($"{ ApiMusic.apiDoman }{ApiMusic.accountPathRegisterAndInfo}");
                 var content = await result.Content.ReadAsStringAsync();
-                if (result.StatusCode == System.Net.HttpStatusCode.OK)
-                {
-                    Account account = JsonConvert.DeserializeObject<Account>(content);
-                    App.accountUser = account;
-                    return account;
-                }
-                else
-                {
-                    return null;
-                }
+                if (result.StatusCode != System.Net.HttpStatusCode.OK) return null;
+                Account account = JsonConvert.DeserializeObject<Account>(content);
+                App.accountUser = account;
+                return account;
             }
         }
-
-
 
         public async Task<Account> GetLoggedAccount()
         {
             Account account;
             Credential credential = await CheckAndGetToken();
-            if (credential == null) // không tồn tại file token
-            {
-                return null;
-            }
+            if (credential == null) return null;
             account = await GetAccountInformation(credential.access_token);
             return account;
-
         }
     }
 }

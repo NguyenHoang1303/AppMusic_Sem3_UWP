@@ -1,4 +1,5 @@
 WinMetadata\Windows.winmd
+aspnet-mvc.gitignore
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -9,7 +10,13 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 AppMusic.xr.xml
 MainPage.xbf
+Pages\AccountInfo\Index.xbf
 Pages\AppMs.xbf
+Pages\CreatSong\Index.xbf
+Pages\ListSong\Index.xbf
 Pages\Login\Index.xbf
+Pages\MyListSong\Index.xbf
 Pages\Register\Index.xbf
+Images\loading.gif
+Images\logoAppMusiz.png
 Properties\Default.rd.xml

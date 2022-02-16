@@ -28,11 +28,11 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Grid.Column="1" Margin="0,25,0,20">
-            <TextBlock Text="Register" FontSize="25" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+        <Grid Grid.Row="0" Grid.Column="1" Margin="0,25,0,0">
+            <TextBlock Text="Đăng ký" FontSize="25" HorizontalAlignment="Center" FontWeight="SemiBold"/>
         </Grid>
 
-        <Grid Grid.Row="1" Grid.Column="1" Margin="0,0,0,20">
+        <Grid Grid.Row="1" Grid.Column="1" Margin="0,0,0,15">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -46,11 +46,11 @@
             </Grid>
             <Grid Grid.Row="0" Grid.Column="1">
                 <TextBox  Header="Tên:" x:Name="txtLastName" HorizontalAlignment="Right" Width="225" />
-                <TextBlock x:Name="errorLastName" Visibility="Collapsed"  Text="* Tên không được để trống" Foreground="Red" FontSize="16" Padding="22,0,0,0" Margin="0,55,-1,-17"/>
+                <TextBlock x:Name="errorLastName" Visibility="Collapsed"  Text="* Tên không được để trống" Foreground="Red" FontSize="12" Padding="22,0,0,0" Margin="0,55,-1,-17"/>
             </Grid>
         </Grid>
 
-        <Grid Grid.Row="2" Grid.Column="1" Margin="0,0,0,20">
+        <Grid Grid.Row="2" Grid.Column="1" Margin="0,0,0,15">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -67,16 +67,16 @@
                 <TextBlock x:Name="errorPhone" Visibility="Collapsed" Text="* Số điện thoại không được để trống" Foreground="Red" FontSize="12" Padding="22,0,0,0" Margin="0,55,-1,-29"/>
             </Grid>
         </Grid>
-       
-        <Grid Grid.Row="3" Grid.Column="1" Margin="0,0,0,20">
+
+        <Grid Grid.Row="3" Grid.Column="1" Margin="0,0,0,15">
             <TextBox  Header="Địa chỉ:" x:Name="txtAddress" HorizontalAlignment="Center" Width="500" />
             <TextBlock x:Name="errorAddress" Visibility="Collapsed"  Text="* Địa chỉ không được để trống" Foreground="Red" FontSize="12" Margin="0,61,0,-17"/>
         </Grid>
-        <Grid Grid.Row="4" Grid.Column="1" Margin="0,0,0,20">
+        <Grid Grid.Row="4" Grid.Column="1" Margin="0,0,0,15">
             <TextBox  Header="Ảnh đại diện:" x:Name="txtAvatar" HorizontalAlignment="Center" Width="500" />
             <TextBlock x:Name="errorAvatar" Visibility="Collapsed"  Text="* Ảnh đại diện không được để trống" Foreground="Red" FontSize="12" Margin="0,61,0,-17"/>
         </Grid>
-        <Grid Grid.Row="5" Grid.Column="1" Margin="0,0,0,20">
+        <Grid Grid.Row="5" Grid.Column="1" Margin="0,0,0,15">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -85,16 +85,16 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Grid.Column="0">
-                <TextBox  Header="Mật khẩu:" x:Name="txtPassword" HorizontalAlignment="Left" Width="225" />
+                <PasswordBox  Header="Mật khẩu:" x:Name="txtPassword" HorizontalAlignment="Left" Width="225" />
                 <TextBlock x:Name="errorPassword" Visibility="Collapsed"  Text="* Mật khẩu không được để trống" Foreground="Red" FontSize="12" Margin="0,56,-1,-17"/>
             </Grid>
             <Grid Grid.Row="0" Grid.Column="1">
-                <TextBox  Header="Xác Nhận Mật khẩu:" x:Name="txtConfirmPassword" HorizontalAlignment="Right" Width="225" />
-                <TextBlock x:Name="errorConfirmPassword" Text="" Foreground="Red" FontSize="12" Padding="22,0,0,0" Margin="0,56,-1,-17"/>
+                <PasswordBox  Header="Xác Nhận Mật khẩu:" x:Name="txtConfirmPassword" HorizontalAlignment="Right" Width="225" />
+                <TextBlock x:Name="errorConfirmPassword" Visibility="Collapsed" Text="* Vui lòng nhập xác nhận mật khẩu" Foreground="Red" FontSize="12" Padding="22,0,0,0" Margin="0,56,-1,-17"/>
             </Grid>
         </Grid>
-       
-        <Grid Grid.Row="6" Grid.Column="1" Margin="0,0,0,20">
+
+        <Grid Grid.Row="6" Grid.Column="1" Margin="0,0,0,15">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -105,31 +105,36 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Column="0" Grid.Row="0" Text="Gender:" Margin="0,0,0,5"/>
-            <RadioButton Grid.Column="0" Grid.Row="1" Content="Nam" Margin="0 0 0 10" VerticalAlignment="Top" GroupName="gender" Checked="RadioButton_Checked"/>
-            <RadioButton Grid.Column="1" Grid.Row="1" Content="Nữ" Margin="0 0 0 10" VerticalAlignment="Top" GroupName="gender" Checked="RadioButton_Checked"/>
-            <RadioButton Grid.Column="2" Grid.Row="1" Content="Khác" Margin="0 0 0 10" VerticalAlignment="Top" GroupName="gender" Checked="RadioButton_Checked"/>
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="Giới tính:" Margin="0,0,0,5"/>
+            <RadioButton Grid.Column="0" Grid.Row="1" Content="Nam" Margin="0 0 0 10" VerticalAlignment="Top" GroupName="gender" Checked="Gender_Checked"/>
+            <RadioButton Grid.Column="1" Grid.Row="1" Content="Nữ" Margin="0 0 0 10" VerticalAlignment="Top" GroupName="gender" Checked="Gender_Checked"/>
+            <RadioButton Grid.Column="2" Grid.Row="1" Content="Khác" Margin="0 0 0 10" VerticalAlignment="Top" GroupName="gender" Checked="Gender_Checked"/>
             <TextBlock Grid.Column="0" Grid.Row="2" x:Name="errorGender" Visibility="Collapsed" Text="* Giới tính không được để trống" Foreground="Red" FontSize="12" Grid.ColumnSpan="2" />
         </Grid>
-        <Grid Grid.Row="7" Grid.Column="1" Margin="0,0,0,20">
+        <Grid Grid.Row="7" Grid.Column="1" Margin="0,0,0,15">
             <CalendarDatePicker x:Name="dtmDob" DateFormat="{}{day.integer}-{month.integer}-{year.full}" Margin="0 0 0 10" Width="500" Header="Ngày sinh:" DateChanged="dtmDob_DateChanged" />
             <TextBlock x:Name="errorDob" Visibility="Collapsed" Text="* Ngày sinh không được để trống" Foreground="Red" FontSize="12" Margin="0,61,0,-32"/>
         </Grid>
-        <Grid Grid.Row="8" Grid.Column="1" Margin="0,0,0,20">
-            <TextBox x:Name="txtIntroduction"  Width="500" Header="Giới thiệu bản thận:"  />
+        <Grid Grid.Row="8" Grid.Column="1" Margin="0,0,0,15">
+            <TextBox x:Name="txtIntroduction"  Width="500" Header="Giới thiệu bản thân:" />
+            <TextBlock x:Name="errorIntro" Visibility="Collapsed" Text="* Giới thiệu bản thân không được để trống" Foreground="Red" FontSize="12" Margin="0,56,0,-28"/>
         </Grid>
-        <Grid Grid.Row="9" Grid.Column="1" Margin="0,0,0,20">
+        <Grid Grid.Row="9" Grid.Column="1" Margin="0,0,0,15">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
-                
+                <RowDefinition Height="auto"/>
+
             </Grid.RowDefinitions>
-            <Button Grid.Column="0" Grid.Row="0" Content="Tạo tài khoản" HorizontalAlignment="Center" />
-            <Button Grid.Column="2" Grid.Row="0" Content="Đăng nhập" HorizontalAlignment="Center" Click="LoginRedirect_Click"  />
+            <Button Grid.Column="0" Grid.Row="0" Content="Tạo tài khoản" HorizontalAlignment="Center" Width="500" Click="Register_Click"/>
+            <Grid Grid.Row="1" Grid.Column="0" Margin="0,15,0,0">
+                <TextBlock Text="Nếu bạn đã có tài khoản vui lòng bấm vào" FontSize="12" Margin="1,8,-1,-8"/>
+                <Button  Background="White" Grid.Column="0" Content="Đăng nhập" Click="LoginRedirect_Click" Margin="230,0,0,0" BorderThickness="0,0,0,0" BorderBrush="White" Foreground="#FF0003FF" FontStyle="Italic" FontWeight="SemiBold"  />
+                <TextBlock Text="để có thể truy cập vào ứng dụng." FontSize="12" HorizontalAlignment="Right" Margin="0,7,-1,-7"/>
+            </Grid>
         </Grid>
 
 

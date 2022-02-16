@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="AppMusic.Pages.Login.Index"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppMusic.Pages.Login"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Padding="0,150,0,0" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="1" Margin="0,50,0,20">
+            <TextBlock Text="Đăng nhập" FontSize="25" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1" Margin="0,0,0,20">
+            <TextBox x:ConnectionId='7'  Header="Email:" x:Name="txtEmail" Width="500" />
+            <TextBlock x:ConnectionId='8' x:Name="errorEmail" Visibility="Collapsed"  Text="* Email không được để trống" Foreground="Red"  FontSize="12" Margin="0,55,-1,-30"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1" Margin="0,0,0,20">
+            <PasswordBox x:ConnectionId='5' Header="Mật khẩu:" x:Name="txtPassword" Width="500"/>
+            <TextBlock x:ConnectionId='6' x:Name="errorPassword" Visibility="Collapsed" Text="* Mật khẩu không được để trống" Foreground="Red" FontSize="12" Margin="0,55,-1,-29"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1" Margin="0,0,0,20" >
+            <Button x:ConnectionId='4'                     Content="Đăng nhập" HorizontalAlignment="Center" Width="500" Margin="0,27,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1" Margin="0,0,0,30" >
+            <TextBlock Text="Nếu bạn chưa có tài khoản? Vui lòng bấm vào" Margin="0,5,0,-8"/>
+            <Button x:ConnectionId='3' Content="Đăng ký"                                Margin="295,0,0,0" Background="White" Foreground="#FF2B00FF" FontSize="15" FontStyle="Italic" FontWeight="SemiBold" BorderThickness="0,0,0,0" />
+            <TextBlock  Text="để tạo tài khoản mới." HorizontalAlignment="Right" Margin="0,5,0,-8"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="1">
+            <SymbolIcon x:ConnectionId='2' x:Name="Loading" Visibility="Collapsed" Symbol="Refresh" HorizontalAlignment="Center" />
+        </Grid>
+    </Grid>
+</Page>
+

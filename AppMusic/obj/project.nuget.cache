@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aiKmCht2LDbe4ldiW2sWc/CiW5p+YaRql3b0bHXN57oitzxi5J6HA0kAFTlkCklgiJjwDYXV5/yzbSy/JgK5kA==",
+  "dgSpecHash": "xkqfEinKRR8eDHlZzfApTVTvHHjuHmQMKtx5XB+yaPxll4rSTvHgEKQXJkoCPNMfZWa7qiLzEMu6KjXYiWwfaA==",
   "success": true,
   "projectFilePath": "C:\\Users\\LaptopAZ.vn\\Desktop\\AppMusic\\AppMusic\\AppMusic.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\LaptopAZ.vn\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
