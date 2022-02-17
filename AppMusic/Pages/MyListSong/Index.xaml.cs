@@ -3,8 +3,11 @@ using AppMusic.Service;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using Windows.Media.Core;
+using Windows.Media.Playback;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -16,6 +19,7 @@ namespace AppMusic.Pages.MyListSong
     public sealed partial class Index : Page
     {
         private SongService songService;
+        private MediaPlaybackList mediaPlaybackList;
         public Index()
         {
             this.InitializeComponent();
@@ -25,17 +29,55 @@ namespace AppMusic.Pages.MyListSong
 
         private async void Index_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
-            List<Song> listSong = await songService.GetMySongs();
-            ObservableCollection<Song> observableSongs = new ObservableCollection<Song>(listSong);
+            List<Song> mySongs = await songService.GetMySongs();
+            ObservableCollection<Song> observableSongs = new ObservableCollection<Song>(mySongs);
             //Debug.WriteLine(listSong.Count);
-            MySong.ItemsSource = observableSongs;
+            listMySong.ItemsSource = observableSongs;
+            loadMusic.Visibility = Visibility.Collapsed;
+
+
+            mediaPlaybackList = new MediaPlaybackList();
+            foreach (var song in mySongs)
+            {
+                try
+                {
+                    var mediaPlaybackItem = new MediaPlaybackItem(MediaSource.CreateFromUri(new Uri(song.link)));
+                    mediaPlaybackList.Items.Add(mediaPlaybackItem);
+                }
+                catch (UriFormatException ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                }
+
+            }
+            var mediaPlayer = new MediaPlayer();
+            mediaPlayer.Source = mediaPlaybackList; // MediaPlayerElement < MediaPlayer < MediaPlaybackList < MediaPlaybackItem           
+            MyMediaPlayer.SetMediaPlayer(mediaPlayer);
         }
 
-        private void Play_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        private void Play_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Song currentSong = MySong.SelectedItem as Song;
-            MyMediaPlayer.MediaPlayer.Source = MediaSource.CreateFromUri(new Uri(currentSong.link));
-            MyMediaPlayer.MediaPlayer.Play();
+
+            Song currentSong = listMySong.SelectedItem as Song;
+            ContentDialog contentDialog = new ContentDialog();
+            for (var i = 0; i < mediaPlaybackList.Items.Count; i++)
+            {
+                MediaPlaybackItem item = mediaPlaybackList.Items[i];
+                if (string.Equals(currentSong.link, item.Source.Uri.ToString()))
+                {
+                    try
+                    {
+                        mediaPlaybackList.MoveTo(Convert.ToUInt32(i));
+                    }
+                    catch
+                    {
+                        contentDialog.Title = "Fail!";
+                        contentDialog.Content = "Bài hát lỗi!";
+                    }
+                    
+                }
+                
+            }
         }
     }
 }

@@ -8,14 +8,31 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <NavigationView x:ConnectionId='2' x:Name="DemoTransaction" IsPaneOpen="False"                                                                                >
+
+    
+    <Page.Resources>
+        <SolidColorBrush x:Key="NavigationViewExpandedPaneBackground" Opacity="0.5" Color="#CC4FA0F7"/>
+        <SolidColorBrush x:Key="NavigationViewDefaultPaneBackground" Opacity="0.5" Color="#CC4FA0F7" />
+    </Page.Resources>
+    <NavigationView x:ConnectionId='2' IsSettingsVisible="False" IsBackButtonVisible="Collapsed" x:Name="DemoTransaction" IsPaneOpen="False"                                                                                >
         <NavigationView.MenuItems>
-            <NavigationViewItem Icon="Audio" Content="Danh sách bài hát" Tag="ListSong" />
+            <NavigationViewItem Tag="logo" >
+                <Image Source="/Images/logoAppMusiz.png" HorizontalAlignment="Left" Margin="114,0,0,0" Tag="logo"/>
+            </NavigationViewItem>
+            <NavigationViewItem Tag="name" >
+                <TextBlock Text="GunnerMusiz" Margin="94,-20,-94,0" FontWeight="SemiLight" 
+                           FontFamily="Berlin Sans FB"/>
+            </NavigationViewItem>
+            <NavigationViewItem x:ConnectionId='3' x:Name="ListSongNav" Icon="Audio" Content="Danh sách bài hát" Tag="ListSong" />
             <NavigationViewItem Icon="Play" Content="Danh sách bài hát của tôi" Tag="MySong" />
             <NavigationViewItem Icon="Add" Content="Thêm bài hát mới" Tag="CreateSong" />
             <NavigationViewItem Icon="OtherUser" Content="Thông tin tài khoản" Tag="Account" />
         </NavigationView.MenuItems>
-        <Frame x:ConnectionId='3' x:Name="contentApp"                                   />
+        <NavigationView.PaneFooter>
+            <NavigationViewItem x:ConnectionId='4'  Content="Đăng xuất" Icon="Remove" Foreground="Black" Tag="CreateSong"                                   />
+        </NavigationView.PaneFooter>
+        <Frame x:ConnectionId='5' x:Name="contentApp"                                   />
     </NavigationView>
+
 </Page>
 

@@ -71,8 +71,8 @@ namespace AppMusic.Service
             using (HttpClient httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
-                var result = await httpClient.GetAsync($"{ ApiMusic.apiDoman }{ApiMusic.accountPathRegisterAndInfo}");
-                var content = await result.Content.ReadAsStringAsync();
+                HttpResponseMessage result = await httpClient.GetAsync($"{ ApiMusic.apiDoman }{ApiMusic.accountPathRegisterAndInfo}");
+                string content = await result.Content.ReadAsStringAsync();
                 if (result.StatusCode != System.Net.HttpStatusCode.OK) return null;
                 Account account = JsonConvert.DeserializeObject<Account>(content);
                 App.accountUser = account;
@@ -82,11 +82,8 @@ namespace AppMusic.Service
 
         public async Task<Account> GetLoggedAccount()
         {
-            Account account;
             Credential credential = await CheckAndGetToken();
-            if (credential == null) return null;
-            account = await GetAccountInformation(credential.access_token);
-            return account;
+            return credential == null ? null : await GetAccountInformation(credential.access_token);
         }
     }
 }

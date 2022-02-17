@@ -30,13 +30,17 @@
     <AppXManifest Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-16T02:40:13.875</Modified>
+      <Modified>2022-02-17T09:44:38.458</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\AppMusic.exe">
       <PackagePath>entrypoint\AppMusic.exe</PackagePath>
-      <Modified>2022-02-16T02:40:12.819</Modified>
+      <Modified>2022-02-17T09:44:37.911</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
+      <PackagePath>CloudinaryDotNet.dll</PackagePath>
+      <Modified>2022-01-17T14:09:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\mahapps.metro.iconpacks.material\4.11.0\lib\uap10.0.16299\MahApps.Metro.IconPacks.Core.dll">
       <PackagePath>MahApps.Metro.IconPacks.Core.dll</PackagePath>
@@ -46,6 +50,34 @@
       <PackagePath>MahApps.Metro.IconPacks.Material.dll</PackagePath>
       <Modified>2021-10-18T21:59:38.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\microsoft.aspnetcore.html.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Html.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Html.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:28:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:29:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\microsoft.aspnetcore.http.features\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Features.dll</PackagePath>
+      <Modified>2018-11-12T17:28:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+      <Modified>2020-10-19T18:48:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\microsoft.extensions.options\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll">
+      <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
+      <Modified>2020-10-19T18:48:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\microsoft.extensions.primitives\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll">
+      <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
+      <Modified>2020-10-19T18:48:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\microsoft.extensions.webencoders\5.0.3\lib\netstandard2.0\Microsoft.Extensions.WebEncoders.dll">
+      <PackagePath>Microsoft.Extensions.WebEncoders.dll</PackagePath>
+      <Modified>2021-01-23T12:35:00.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2021-03-17T20:03:36.000</Modified>
@@ -53,6 +85,14 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2021-02-04T18:15:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\system.runtime.compilerservices.unsafe\5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2020-10-19T18:46:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\system.text.encodings.web\5.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
+      <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
+      <Modified>2020-10-19T18:40:38.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -66,13 +106,29 @@
       <PackagePath>aspnet-mvc.gitignore</PackagePath>
       <Modified>2022-02-14T18:26:18.301</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\loading.gif">
-      <PackagePath>Images\loading.gif</PackagePath>
-      <Modified>2022-02-15T17:39:47.061</Modified>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\kindpng_405269.png">
+      <PackagePath>Images\kindpng_405269.png</PackagePath>
+      <Modified>2022-02-17T04:19:22.390</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\Login\1.png">
+      <PackagePath>Images\Login\1.png</PackagePath>
+      <Modified>2022-02-16T06:36:22.071</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\Login\Music-Free-PNG-Image.png">
+      <PackagePath>Images\Login\Music-Free-PNG-Image.png</PackagePath>
+      <Modified>2022-02-16T06:29:40.731</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\Login\Music-PNG-Clipart.png">
+      <PackagePath>Images\Login\Music-PNG-Clipart.png</PackagePath>
+      <Modified>2022-02-16T06:34:34.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\logoAppMusiz.png">
       <PackagePath>Images\logoAppMusiz.png</PackagePath>
       <Modified>2022-02-15T16:37:30.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\Register\rgter.png">
+      <PackagePath>Images\Register\rgter.png</PackagePath>
+      <Modified>2022-02-16T07:54:48.765</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -108,49 +164,89 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2022-01-11T12:02:36.148</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\ListSong\lisSOng.gif">
+      <PackagePath>Images\ListSong\lisSOng.gif</PackagePath>
+      <Modified>2022-02-16T13:44:11.025</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\ListSong\lisSOng1.gif">
+      <PackagePath>Images\ListSong\lisSOng1.gif</PackagePath>
+      <Modified>2022-02-16T13:46:52.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\ListSong\lisSOng2.gif">
+      <PackagePath>Images\ListSong\lisSOng2.gif</PackagePath>
+      <Modified>2022-02-16T13:49:30.723</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\ListSong\lisSOng3.gif">
+      <PackagePath>Images\ListSong\lisSOng3.gif</PackagePath>
+      <Modified>2022-02-16T13:52:04.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\ListSong\lisSOng4.gif">
+      <PackagePath>Images\ListSong\lisSOng4.gif</PackagePath>
+      <Modified>2022-02-16T13:53:54.272</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\ListSong\lisSOng5.gif">
+      <PackagePath>Images\ListSong\lisSOng5.gif</PackagePath>
+      <Modified>2022-02-16T13:55:16.725</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\ListSong\lisSOng9.gif">
+      <PackagePath>Images\ListSong\lisSOng9.gif</PackagePath>
+      <Modified>2022-02-16T14:18:45.480</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\loading.gif">
+      <PackagePath>Images\loading.gif</PackagePath>
+      <Modified>2022-02-15T17:39:47.061</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\loginGif.gif">
+      <PackagePath>Images\loginGif.gif</PackagePath>
+      <Modified>2022-02-16T06:18:11.302</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\music.jpg">
+      <PackagePath>Images\music.jpg</PackagePath>
+      <Modified>2022-02-16T16:19:06.005</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2022-02-14T14:28:19.919</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\AppMusic.xr.xml">
       <PackagePath>AppMusic.xr.xml</PackagePath>
-      <Modified>2022-02-15T19:07:58.905</Modified>
+      <Modified>2022-02-17T09:40:15.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-16T02:40:12.677</Modified>
+      <Modified>2022-02-17T09:44:37.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-16T02:40:12.677</Modified>
+      <Modified>2022-02-17T09:44:37.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\AccountInfo\Index.xbf">
       <PackagePath>Pages\AccountInfo\Index.xbf</PackagePath>
-      <Modified>2022-02-16T02:40:12.648</Modified>
+      <Modified>2022-02-17T09:44:37.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\AppMs.xbf">
       <PackagePath>Pages\AppMs.xbf</PackagePath>
-      <Modified>2022-02-16T02:40:12.678</Modified>
+      <Modified>2022-02-17T09:44:37.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\CreatSong\Index.xbf">
       <PackagePath>Pages\CreatSong\Index.xbf</PackagePath>
-      <Modified>2022-02-16T02:40:12.665</Modified>
+      <Modified>2022-02-17T09:44:37.776</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\ListSong\Index.xbf">
       <PackagePath>Pages\ListSong\Index.xbf</PackagePath>
-      <Modified>2022-02-16T02:40:12.678</Modified>
+      <Modified>2022-02-17T09:44:37.781</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\Login\Index.xbf">
       <PackagePath>Pages\Login\Index.xbf</PackagePath>
-      <Modified>2022-02-16T02:40:12.678</Modified>
+      <Modified>2022-02-17T09:44:37.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\MyListSong\Index.xbf">
       <PackagePath>Pages\MyListSong\Index.xbf</PackagePath>
-      <Modified>2022-02-16T02:40:12.678</Modified>
+      <Modified>2022-02-17T09:44:37.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\Register\Index.xbf">
       <PackagePath>Pages\Register\Index.xbf</PackagePath>
-      <Modified>2022-02-16T02:40:12.677</Modified>
+      <Modified>2022-02-17T09:44:37.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -158,11 +254,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-15T17:50:42.058</Modified>
+      <Modified>2022-02-17T04:31:11.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Core\AppMusic.exe">
       <PackagePath>AppMusic.exe</PackagePath>
-      <Modified>2022-02-16T02:40:13.862</Modified>
+      <Modified>2022-02-17T09:44:38.454</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

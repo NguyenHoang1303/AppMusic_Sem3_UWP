@@ -1,5 +1,11 @@
-﻿using Windows.UI.Xaml;
+﻿using AppMusic.Service;
+using System;
+using System.Diagnostics;
+using Windows.Storage;
+using Windows.UI;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -35,7 +41,7 @@ namespace AppMusic.Pages
                 {
                     case "ListSong":
                         contentApp.Navigate(typeof(Pages.ListSong.Index));
-                        break; 
+                        break;
                     case "MySong":
                         contentApp.Navigate(typeof(Pages.MyListSong.Index));
                         break;
@@ -44,6 +50,8 @@ namespace AppMusic.Pages
                         break;
                     case "Account":
                         contentApp.Navigate(typeof(Pages.AccountInfo.Index));
+                        break;
+                    default:
                         break;
                 }
             }
@@ -54,5 +62,20 @@ namespace AppMusic.Pages
 
         }
 
+        private async void NavigationViewItem_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            try
+            {
+                StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+                StorageFile manifestFile = await storageFolder.GetFileAsync(AccountService.tokenUserFile);
+                await manifestFile.DeleteAsync();
+                Frame rootFrame = Window.Current.Content as Frame;
+                rootFrame.Navigate(typeof(Pages.Login.Index));
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Có lỗi xảy ra khi logout" + ex);
+            }
+        }
     }
 }

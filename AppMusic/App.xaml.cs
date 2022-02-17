@@ -25,8 +25,8 @@ namespace AppMusic
         /// </summary>
         public App()
         {
-            this.InitializeComponent();
-            this.Suspending += OnSuspending;
+            InitializeComponent();
+            Suspending += OnSuspending;
             accountService = new AccountService();
         }
 

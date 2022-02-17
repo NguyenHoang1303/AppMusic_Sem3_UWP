@@ -8,41 +8,135 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Padding="0,150,0,0" >
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Grid.Column="1" Margin="0,50,0,20">
-            <TextBlock Text="Đăng nhập" FontSize="25" HorizontalAlignment="Center" FontWeight="SemiBold"/>
-        </Grid>
-        <Grid Grid.Row="1" Grid.Column="1" Margin="0,0,0,20">
-            <TextBox  Header="Email:" x:Name="txtEmail" Width="500" />
-            <TextBlock x:Name="errorEmail" Visibility="Collapsed"  Text="* Email không được để trống" Foreground="Red"  FontSize="12" Margin="0,55,-1,-30"/>
-        </Grid>
-        <Grid Grid.Row="2" Grid.Column="1" Margin="0,0,0,20">
-            <PasswordBox Header="Mật khẩu:" x:Name="txtPassword" Width="500"/>
-            <TextBlock x:Name="errorPassword" Visibility="Collapsed" Text="* Mật khẩu không được để trống" Foreground="Red" FontSize="12" Margin="0,55,-1,-29"/>
-        </Grid>
-        <Grid Grid.Row="3" Grid.Column="1" Margin="0,0,0,20" >
-            <Button Click="Login_Click" Content="Đăng nhập" HorizontalAlignment="Center" Width="500" Margin="0,27,0,0" VerticalAlignment="Top"/>
-        </Grid>
-        <Grid Grid.Row="4" Grid.Column="1" Margin="0,0,0,30" >
-            <TextBlock Text="Nếu bạn chưa có tài khoản? Vui lòng bấm vào" Margin="0,5,0,-8"/>
-            <Button Content="Đăng ký" Click="RedirectRegister_Click" Margin="295,0,0,0" Background="White" Foreground="#FF2B00FF" FontSize="15" FontStyle="Italic" FontWeight="SemiBold" BorderThickness="0,0,0,0" />
-            <TextBlock  Text="để tạo tài khoản mới." HorizontalAlignment="Right" Margin="0,5,0,-8"/>
-        </Grid>
-        <Grid Grid.Row="5" Grid.Column="1">
-            <SymbolIcon x:Name="Loading" Visibility="Collapsed" Symbol="Refresh" HorizontalAlignment="Center" />
+    <Grid>
+        <Grid Padding="0,0,0,0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Border CornerRadius="3" Grid.RowSpan="6" Grid.ColumnSpan="3" BorderBrush="#FFF1F1F1" Margin="-10,0,10,-574">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#7be9f6" Offset="0.0"/>
+                        <GradientStop Color="#f083da" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+            <Grid Grid.Row="0" Grid.RowSpan="5" Grid.Column="0" >
+                <Image Source="/Images/Login/1.png" Margin="195,288,4,208" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-16.311"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="/Images/Login/Music-PNG-Clipart.png" Margin="-10,161,10,378"/>
+
+                <Image Source="/Images/Login/Music-Free-PNG-Image.png" Margin="269,122,56,528" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-38.812"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="/Images/Login/Music-Free-PNG-Image.png" Margin="242,444,7,101" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="58.519"/>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2" Grid.RowSpan="5">
+                <Image Source="/Images/Login/Music-PNG-Clipart.png" Width="259" Margin="0,11,191,400" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" >
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="25.543"/>
+                    </Image.RenderTransform>
+                </Image>
+
+                <Image Source="/Images/Login/Music-Free-PNG-Image.png" Margin="39,305,238,61" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="60.671" SkewX="0.715" TranslateX="2.208" TranslateY="-1.776" ScaleX="1" ScaleY="1"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="/Images/Login/1.png" Margin="100,321,101,448"/>
+                <Image Source="/Images/Login/Music-PNG-Clipart.png" Width="483" Margin="0,305,18,155" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-179.904"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="/Images/Login/Music-Free-PNG-Image.png" Margin="54,163,348,323" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-21.579" SkewX="0.715" TranslateX="2.208" TranslateY="-1.776" ScaleX="1" ScaleY="1"/>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1" Margin="0,50,0,20">
+                <Image Source="/Images/logoAppMusiz.png" Width="100" HorizontalAlignment="Center"/>
+                <TextBlock FontFamily="Forte" Text="GunnerMuzik" HorizontalAlignment="Center" FontWeight="SemiLight" VerticalAlignment="Top"
+                            Margin="0,180,0,0"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1" Margin="0,0,0,20">
+                <TextBlock  Text="Đăng nhập" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBox Padding="15,5,0,0" CornerRadius="15" Height="60"  FontWeight="SemiLight"  Header="Email:" x:Name="txtEmail" Width="500" Margin="0,84,0,-20" HorizontalAlignment="Center" TextChanged="txtEmail_TextChanged" />
+                <TextBlock x:Name="errorEmail" Visibility="Collapsed"  Text="* Email không được để trống" Foreground="Red"  FontSize="12" Margin="0,166,-1,-142"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="1" Margin="0,0,0,20">
+                <PasswordBox Padding="15,5,0,0" CornerRadius="15"  Header="Mật khẩu:" x:Name="txtPassword" Width="500" Height="60"/>
+                <TextBlock  x:Name="errorPassword" Visibility="Collapsed" Text="* Mật khẩu không được để trống" Foreground="Red" FontSize="12" Margin="0,86,-1,-60"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="1" Margin="0,0,0,20" >
+                <Image Source="/Images/loginGif.gif" Width="57"  HorizontalAlignment="Left" Margin="135,8,0,87" RenderTransformOrigin="0.465,0.379" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="89.474"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Button  CornerRadius="50" Width="100" Height="100" Click="Login_Click" Content="Đăng nhập" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.525,0.314">
+                    <Button.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Aqua" Offset="0.0"/>
+                            <GradientStop Color="RoyalBlue" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Image Source="/Images/loginGif.gif" Width="57"  HorizontalAlignment="Left" Margin="138,19,0,76"/>
+                <Image Source="/Images/loginGif.gif" Width="57"  HorizontalAlignment="Left" Margin="305,8,0,87"/>
+                <Image Source="/Images/loginGif.gif" Width="57"  HorizontalAlignment="Left" Margin="318,16,0,79" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-88.878"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="/Images/loginGif.gif" Width="57"  HorizontalAlignment="Left" Margin="38,8,0,87"/>
+                <Image Source="/Images/loginGif.gif" Width="57"  HorizontalAlignment="Left" Margin="402,8,0,87"/>
+                <Image Source="/Images/loginGif.gif" Width="57"  HorizontalAlignment="Left" Margin="38,18,0,77" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-67.084"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Source="/Images/loginGif.gif" Width="57"  HorizontalAlignment="Left" Margin="402,18,0,77" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="-126.59"/>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="1" Margin="0,0,0,30" >
+                <TextBlock  Text="Nếu bạn chưa có tài khoản? Vui lòng bấm vào" Margin="-3,-87,3,84"/>
+                <Button  CornerRadius="30" Content="Đăng ký" Click="RedirectRegister_Click" Margin="289,-90,0,0" Foreground="Black" FontSize="15" FontStyle="Italic" FontWeight="SemiBold" BorderThickness="0,0,0,0" RenderTransformOrigin="0.518,-0.407" VerticalAlignment="Top" >
+                    <Button.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Aqua" Offset="0.0"/>
+                            <GradientStop Color="RoyalBlue" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <TextBlock  Text="để tạo tài khoản mới." HorizontalAlignment="Right" Margin="0,-86,-2,83"/>
+            </Grid>
+            <Image x:Name="Loading" Source="/Images/loading.gif" Grid.Column="1" Visibility="Collapsed" Margin="0,190,0,40" Grid.RowSpan="4" />
+            
         </Grid>
     </Grid>
 </Page>

@@ -21,20 +21,43 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <StackPanel HorizontalAlignment="Center" Margin="0,50,0,0">
-            <Image Source="/Images/logoAppMusiz.png" Width="150"/>
-            <TextBlock Text="Vid19-Musizz"
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="40*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0"  Source="/Images/ListSong/lisSOng.gif" Margin="50"/>
+            <Image Grid.Column="1" Source="/Images/logoAppMusiz.png" Width="100" Height="100"/>
+            <TextBlock Grid.Column="1" Text="GunnerMuzik"
                            FontWeight="SemiLight"
                            FontFamily="Berlin Sans FB"
                            FontSize="22"
                            Foreground="White"
-                           HorizontalAlignment="Center" FontStyle="Normal"/>
-        </StackPanel>
-        <StackPanel Grid.Row="1" >
-            <TextBlock Text="Thêm mới bài hát" FontSize="25" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
-            <Grid Width="500" Margin="0,50,0,0">
-                <TextBlock Width="100" HorizontalAlignment="Left" Text="Tên bài hát:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
-                <TextBox x:ConnectionId='14' FontFamily="Helvetica"
+                           HorizontalAlignment="Center" FontStyle="Normal" Margin="0,180,0,23"/>
+            <Image Grid.Column="2" Source="/Images/ListSong/lisSOng1.gif" Margin="50"/>
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Image Source="/Images/Register/rgter.png" Margin="0,-297,0,0" Opacity="0.6"/>
+            </Grid>
+            <Grid Grid.Column="0">
+                <Image Source="/Images/Register/rgter.png" Margin="0,-297,0,0" Opacity="0.6"/>
+            </Grid>
+            <Grid Grid.Column="1" Margin="0,0,100,0">
+                <StackPanel>
+                    <TextBlock Text="Thêm mới bài hát" FontSize="25" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <Grid Width="500" Margin="0,50,0,0">
+                        <TextBlock Width="100" HorizontalAlignment="Left" Text="Tên bài hát:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
+                        <TextBox x:ConnectionId='16' FontFamily="Helvetica"
                          x:Name="txtName"
                              FontWeight="Light"
                              FontSize="18"
@@ -45,18 +68,18 @@
                              Width="350"
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"/>
-                <Border Width="350"
+                        <Border Width="350"
                     VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Height="2"
                         Background="White"
                         Opacity="0.5" Margin="0,0,0,5"/>
-            </Grid>
-            <TextBlock x:ConnectionId='3' x:Name="errName" Text="* Nhập tên bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
+                    </Grid>
+                    <TextBlock x:ConnectionId='4' x:Name="errName" Text="* Nhập tên bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
 
-            <Grid Width="500" Margin="0,15,0,0">
-                <TextBlock Width="100" HorizontalAlignment="Left" Text="Mô tả:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
-                <TextBox x:ConnectionId='13' FontFamily="Helvetica"
+                    <Grid Width="500" Margin="0,15,0,0">
+                        <TextBlock Width="100" HorizontalAlignment="Left" Text="Mô tả:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
+                        <TextBox x:ConnectionId='15' FontFamily="Helvetica"
                              FontWeight="Light"
                             x:Name="txtDescription"
                              FontSize="18"
@@ -67,18 +90,18 @@
                              Width="350"
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"/>
-                <Border Width="350"
+                        <Border Width="350"
                     VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Height="2"
                         Background="White"
                         Opacity="0.5" Margin="0,0,0,5"/>
-            </Grid>
-            <TextBlock x:ConnectionId='4' x:Name="errDescription" Text="* Nhâp mô tả bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
+                    </Grid>
+                    <TextBlock x:ConnectionId='5' x:Name="errDescription" Text="* Nhâp mô tả bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
 
-            <Grid Width="500" Margin="0,15,0,0">
-                <TextBlock Width="100" HorizontalAlignment="Left" Text="Ca sĩ:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
-                <TextBox x:ConnectionId='12' FontFamily="Helvetica"
+                    <Grid Width="500" Margin="0,15,0,0">
+                        <TextBlock Width="100" HorizontalAlignment="Left" Text="Ca sĩ:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
+                        <TextBox x:ConnectionId='14' FontFamily="Helvetica"
                          x:Name="txtSinger"
                              FontWeight="Light"
                              FontSize="18"
@@ -89,18 +112,18 @@
                              Width="350"
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"/>
-                <Border Width="350"
+                        <Border Width="350"
                     VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Height="2"
                         Background="White"
                         Opacity="0.5" Margin="0,0,0,5"/>
-            </Grid>
-            <TextBlock x:ConnectionId='5' x:Name="errSinger" Text="* Nhâp ca sĩ trình bày" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
+                    </Grid>
+                    <TextBlock x:ConnectionId='6' x:Name="errSinger" Text="* Nhâp ca sĩ trình bày" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
 
-            <Grid Width="500" Margin="0,15,0,0">
-                <TextBlock Width="100" HorizontalAlignment="Left" Text="Tác giả:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
-                <TextBox x:ConnectionId='11' FontFamily="Helvetica"
+                    <Grid Width="500" Margin="0,15,0,0">
+                        <TextBlock Width="100" HorizontalAlignment="Left" Text="Tác giả:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
+                        <TextBox x:ConnectionId='13' FontFamily="Helvetica"
                          x:Name="txtAuthor"
                              FontWeight="Light"
                              FontSize="18"
@@ -111,40 +134,32 @@
                              Width="350"
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"/>
-                <Border Width="350"
+                        <Border Width="350"
                     VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Height="2"
                         Background="White"
                         Opacity="0.5" Margin="0,0,0,5"/>
-            </Grid>
-            <TextBlock x:ConnectionId='6' x:Name="errAuthor" Text="* Nhâp tác giả bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
+                    </Grid>
+                    <TextBlock x:ConnectionId='7' x:Name="errAuthor" Text="* Nhâp tác giả bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
 
-            <Grid Width="500" Margin="0,15,0,0">
-                <TextBlock Width="100" HorizontalAlignment="Left" Text="Ảnh:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
-                <TextBox x:ConnectionId='10' FontFamily="Helvetica"
-                         x:Name="txtThumbnail"
-                             FontWeight="Light"
-                             FontSize="18"
-                             HorizontalAlignment="Right"
-                             Foreground="White"
-                             Background="Transparent"
-                             BorderThickness="0"
-                             Width="350"
-                             HorizontalContentAlignment="Left"
-                             Opacity="0.5"/>
-                <Border Width="350"
-                    VerticalAlignment="Bottom"
-                        HorizontalAlignment="Right"
-                        Height="2"
-                        Background="White"
-                        Opacity="0.5" Margin="0,0,0,5"/>
-            </Grid>
-            <TextBlock x:ConnectionId='7' x:Name="errThumbnail" Text="* Nhâp ảnh bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
+                    <Grid Width="500" Margin="0,15,0,0">
+                        <TextBlock Width="100" HorizontalAlignment="Left" Text="Ảnh:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
+                        <TextBox x:ConnectionId='11' FontFamily="Helvetica" x:Name="txtThumbnail" Visibility="Collapsed"/>
+                        <Button x:ConnectionId='12' x:Name="btnCreateThumnnail"                                  Content="Tải ảnh lên" CornerRadius="15" Margin="151,7,0,0" VerticalAlignment="Top">
+                            <Button.Background>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="#7be9f6" Offset="0.0"/>
+                                    <GradientStop Color="Aqua" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                    </Grid>
+                    <TextBlock x:ConnectionId='8' x:Name="errThumbnail" Text="* Nhâp ảnh bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
 
-            <Grid Width="500" Margin="0,15,0,0">
-                <TextBlock Width="100" HorizontalAlignment="Left" Text="Link:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
-                <TextBox x:ConnectionId='9' FontFamily="Helvetica"
+                    <Grid Width="500" Margin="0,15,0,0">
+                        <TextBlock Width="100" HorizontalAlignment="Left" Text="Link:" VerticalAlignment="Center" FontSize="18" Foreground="White" FontWeight="Bold"/>
+                        <TextBox x:ConnectionId='10' FontFamily="Helvetica"
                          x:Name="txtLink"
                              FontWeight="Light"
                              FontSize="18"
@@ -155,19 +170,29 @@
                              Width="350"
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"/>
-                <Border Width="350"
+                        <Border Width="350"
                     VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Height="2"
                         Background="White"
                         Opacity="0.5" Margin="0,0,0,5"/>
+                    </Grid>
+                    <TextBlock x:ConnectionId='9' x:Name="errLink" Text="* Nhâp link bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
+                </StackPanel>
+                <Button x:ConnectionId='3' CornerRadius="15" Content="Tạo mới"                            HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="500">
+                    <Button.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Aqua" Offset="0.0"/>
+                            <GradientStop Color="SkyBlue" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
             </Grid>
-            <TextBlock x:ConnectionId='8' x:Name="errLink" Text="* Nhâp link bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
+            <Grid Grid.Column="0" HorizontalAlignment="Right" Width="300" Height="300" CornerRadius="150" Margin="0,50,160,200" >
+                <Image x:ConnectionId='2' x:Name="txtImageCreate" Source="/Images/music.jpg"  Stretch="Fill" VerticalAlignment="Top" Height="300"/>
+            </Grid>
+        </Grid>
 
-
-
-        </StackPanel>
-        <Button x:ConnectionId='2' Content="Tạo mới"                            HorizontalAlignment="Center" Margin="0,494,0,0" Grid.Row="1" VerticalAlignment="Top" Width="500"/>
 
     </Grid>
 </Page>

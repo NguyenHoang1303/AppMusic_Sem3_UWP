@@ -72,5 +72,10 @@ namespace AppMusic.Pages.Login
             }
             return true;
         }
+
+        private void txtEmail_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -15,6 +15,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="CornerRadius" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Background" />
@@ -52,47 +53,38 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
+      <RootProperty Name="Width" />
       <RootProperty Name="IsTextSelectionEnabled" />
       <RootProperty Name="TextWrapping" />
+      <RootProperty Name="FontFamily" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="HorizontalTextAlignment" />
-      <RootProperty Name="Width" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="FontFamily" />
       <RootProperty Name="FontStyle" />
-      <RootProperty Name="TextTrimming" />
       <RootProperty Name="Style" />
+      <RootProperty Name="LineHeight" />
+      <RootProperty Name="TextTrimming" />
       <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="CornerRadius" />
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="AllowFocusOnInteraction" />
       <RootProperty Name="FocusVisualMargin" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontStyle" />
       <RootProperty Name="FontWeight" />
-      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Height" />
       <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
-      <RootProperty Name="Fill" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
-      <RootProperty Name="ImageSource" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Source" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Stretch" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
       <RootProperty Name="GradientStops" />
@@ -101,30 +93,51 @@
       <RootProperty Name="Color" />
       <RootProperty Name="Offset" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="AccessKey" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Visibility" />
+    </RootType>
     <RootType FullName="AppMusic.Pages.AccountInfo.Index" />
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Color" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
+      <RootProperty Name="IsSettingsVisible" />
+      <RootProperty Name="IsBackButtonVisible" />
       <RootProperty Name="IsPaneOpen" />
       <RootProperty Name="MenuItems" />
+      <RootProperty Name="PaneFooter" />
       <RootProperty Name="Content" />
       <RootEvent Name="Loaded" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItem">
-      <RootProperty Name="Icon" />
-      <RootProperty Name="Content" />
       <RootProperty Name="Tag" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Icon" />
+      <RootProperty Name="Foreground" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootEvent Name="Navigated" />
     </RootType>
     <RootType FullName="AppMusic.Pages.AppMs" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="FontFamily" />
@@ -137,42 +150,68 @@
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Opacity" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Header" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="AppMusic.Pages.CreatSong.Index" />
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="IsItemClickEnabled" />
-      <RootProperty Name="IsSwipeEnabled" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="CanDragItems" />
-      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="CanReorderItems" />
+      <RootProperty Name="CanDrag" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="AllowDrop" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="ItemTemplate" />
       <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="Rotation" />
+      <RootProperty Name="SkewX" />
+      <RootProperty Name="TranslateX" />
+      <RootProperty Name="TranslateY" />
+      <RootProperty Name="ScaleX" />
+      <RootProperty Name="ScaleY" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.MediaPlayerElement">
       <RootProperty Name="AutoPlay" />
       <RootProperty Name="AreTransportControlsEnabled" />
+      <RootProperty Name="TransportControls" />
+      <RootProperty Name="Background" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.MediaTransportControls">
+      <RootProperty Name="IsFullWindowButtonVisible" />
+      <RootProperty Name="IsNextTrackButtonVisible" />
+      <RootProperty Name="IsPreviousTrackButtonVisible" />
+      <RootProperty Name="IsZoomButtonVisible" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
+      <RootMethod Name="GetName" />
+      <RootMethod Name="SetName" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="AppMusic.Pages.ListSong.Index" />
-    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
-      <RootProperty Name="Visibility" />
-      <RootProperty Name="Symbol" />
-      <RootProperty Name="HorizontalAlignment" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="Padding" />
+      <RootProperty Name="CornerRadius" />
       <RootProperty Name="Header" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="AppMusic.Pages.Login.Index" />
     <RootType FullName="AppMusic.Pages.MyListSong.Index" />
     <RootType FullName="Windows.UI.Xaml.Controls.CalendarDatePicker">
+      <RootProperty Name="CornerRadius" />
       <RootProperty Name="DateFormat" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
       <RootProperty Name="Header" />
       <RootEvent Name="DateChanged" />

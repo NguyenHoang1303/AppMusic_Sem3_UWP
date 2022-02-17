@@ -1,7 +1,6 @@
 ﻿using AppMusic.Entity;
 using AppMusic.Service;
 using System;
-using System.Collections.ObjectModel;
 using System.Diagnostics;
 using Windows.Storage;
 using Windows.UI.Xaml;
@@ -23,22 +22,23 @@ namespace AppMusic.Pages.AccountInfo
             this.Loaded += Index_Loaded;
         }
 
-        private void Index_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        private void Index_Loaded(object sender, RoutedEventArgs e)
         {
             Account account = App.accountUser;
-            txtFirstName.Text = account.firstName;
+            txtFirstName.Text = account.firstName.ToString();
             txtLastName.Text = account.lastName.ToString();
             txtEmail.Text = account.email.ToString();
             txtAddress.Text = account.address.ToString();
             txtPhone.Text = account.phone.ToString();
-            //BitmapImage bitmapImageAvatar = new BitmapImage(new Uri(account.avatar.ToString()));
-            // txtAvatar.Source = bitmapImageAvatar;
+            BitmapImage bitmapImageAvatar = new BitmapImage(new Uri(account.avatar));
+            txtAvatar.Source = bitmapImageAvatar;
             txtGender.Text = account.gender.ToString();
             txtDob.Text = account.birthday.ToString();
             txtIntroduction.Text = account.introduction ?? "";
+            Debug.WriteLine(account.email + "\n" + account.introduction);
         }
 
-        private async void Exit_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        private async void Exit_Click(object sender, RoutedEventArgs e)
         {
             try
             {

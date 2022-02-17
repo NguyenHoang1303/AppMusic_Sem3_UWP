@@ -61,7 +61,7 @@ namespace AppMusic.Service
             Credential credential = await LoadToken();
             string jsonString = JsonConvert.SerializeObject(song);
             HttpClient httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer" , credential.access_token);
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", credential.access_token);
             HttpContent contentToSend = new StringContent(jsonString, Encoding.UTF8, ApiMusic.mediaType);
             HttpResponseMessage result = await httpClient.PostAsync($"{ ApiMusic.apiDoman }{ApiMusic.songPathCreateAndListInfoMine}", contentToSend);
             Debug.WriteLine(result);
