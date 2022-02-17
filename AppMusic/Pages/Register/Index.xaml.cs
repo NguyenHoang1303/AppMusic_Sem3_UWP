@@ -1,4 +1,4 @@
-﻿using AppMusic.Entity;
+﻿using AppMusic.Constant;
 using AppMusic.Service;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
@@ -39,9 +39,9 @@ namespace AppMusic.Pages.Register
         private void Index_Loaded(object sender, RoutedEventArgs e)
         {
             accountCloudinary = new CloudinaryDotNet.Account(
-           "nguyenhs",
-           "145514162246859",
-           "-TrF50dJvtpBQMR28i4rpCIg5K4"
+           CloudinaryInfo.CloudName,
+            CloudinaryInfo.ApiKey,
+           CloudinaryInfo.ApiSecret
            );
             cloudinary = new Cloudinary(accountCloudinary);
             cloudinary.Api.Secure = true;
@@ -80,6 +80,7 @@ namespace AppMusic.Pages.Register
             {
                 contentDialog.Title = "Acction success!";
                 contentDialog.Content = "Tạo tài khoản thành công!";
+                Frame.Navigate(typeof(Pages.Login.Index));
             }
             else
             {
@@ -140,7 +141,6 @@ namespace AppMusic.Pages.Register
             {
                 errorPassword.Visibility = Visibility.Visible;
                 countError++;
-                Debug.WriteLine("2.password: " + password);
             }
             else
             {
@@ -154,18 +154,19 @@ namespace AppMusic.Pages.Register
             }
             else
             {
+                if (!string.Equals(password, confirmPass))
+                {
+                    errorPassword.Text = "* Mật khẩu không giống nhau";
+                    errorPassword.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    errorPassword.Visibility = Visibility.Collapsed;
+                }
                 errorConfirmPassword.Visibility = Visibility.Collapsed;
             }
 
-            if (!string.Equals(password, confirmPass))
-            {
-                errorPassword.Text = "* Mật khẩu không giống nhau";
-                errorPassword.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                errorPassword.Visibility = Visibility.Collapsed;
-            }
+           
 
             if (string.IsNullOrEmpty(txtPhone.Text))
             {

@@ -1,16 +1,16 @@
 ﻿using AppMusic.Entity;
+using AppMusic.Constant;
 using AppMusic.Service;
-using System;
-using System.Diagnostics;
-using Windows.Storage;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
-using System.Threading.Tasks;
-using Windows.Storage.Streams;
-using Windows.UI.Xaml.Media.Imaging;
+using System;
+using System.Diagnostics;
 using System.IO;
+using Windows.Storage;
+using Windows.Storage.Streams;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -34,9 +34,9 @@ namespace AppMusic.Pages.CreatSong
         private void Index_Loaded(object sender, RoutedEventArgs e)
         {
             accountCloudinary = new CloudinaryDotNet.Account(
-            "nguyenhs",
-            "145514162246859",
-            "-TrF50dJvtpBQMR28i4rpCIg5K4"
+            CloudinaryInfo.CloudName,
+            CloudinaryInfo.ApiKey,
+            CloudinaryInfo.ApiSecret
             );
             cloudinary = new Cloudinary(accountCloudinary);
             cloudinary.Api.Secure = true;
@@ -64,13 +64,13 @@ namespace AppMusic.Pages.CreatSong
             ContentDialog contentDialog = new ContentDialog();
             if (result)
             {
-                contentDialog.Title = "Creat Music:";
-                contentDialog.Content = "Tạo nhạc mới thành công";
+                contentDialog.Title = "Thành công:";
+                contentDialog.Content = "Bạn đã thêm bài nhạc mới";
             }
             else
             {
-                contentDialog.Title = "Creat Music:";
-                contentDialog.Content = "Tạo nhạc mới thất bại!";
+                contentDialog.Title = "Thất bại:";
+                contentDialog.Content = "Thêm bài nhạc mới thất bại!";
             }
             contentDialog.CloseButtonText = "Ok";
             await contentDialog.ShowAsync();
@@ -168,7 +168,6 @@ namespace AppMusic.Pages.CreatSong
             }
             else
             {
-
                 Debug.WriteLine("Tạo ảnh cho nhạc thất bại!");
             }
         }

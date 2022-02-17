@@ -37,13 +37,13 @@ namespace AppMusic.Pages.Login
             Loading.Visibility = Visibility.Collapsed;
             if (result != null)
             {
-                contentDialog.Title = "Login!";
-                contentDialog.Content = "Đăng nhập thành công!";
+                contentDialog.Title = "Đăng nhập thành công!";
+                contentDialog.Content = "Xin chào!! Chúc bạn nghe nhạc vui vẻ.";
                 Frame.Navigate(typeof(Pages.AppMs));
             }
             else
             {
-                contentDialog.Title = "Login!";
+                contentDialog.Title = "Đăng nhập thất bại!";
                 contentDialog.Content = "Đăng nhập thất bại!";
             }
             contentDialog.CloseButtonText = "Ok";

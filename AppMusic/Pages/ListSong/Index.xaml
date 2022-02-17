@@ -53,14 +53,14 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
                         <Image Source="{x:Bind thumbnail}" Width="200" Stretch="Fill"/>
-                        <StackPanel Margin="12,0,0,0" Grid.Column="1" >
+                        <StackPanel Margin="12,0,0,0" Grid.Column="1" Padding="20,10,0,0">
                             <TextBlock Text="{x:Bind name}" FontSize="16" FontWeight="SemiBold" Style="{ThemeResource BaseTextBlockStyle}"
                                            HorizontalAlignment="Left" Margin="0,0,0,6" LineHeight="20"/>
                             <Grid>
                                 <TextBlock FontSize="14" Text="Mô tả: " FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
                                            TextTrimming="CharacterEllipsis" Width="350" TextWrapping="NoWrap" Margin="0,0,0,6"/>
                                 <TextBlock FontSize="14" Text="{x:Bind description}" FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
-                                           TextTrimming="CharacterEllipsis" Width="350" TextWrapping="NoWrap" Margin="50,0,0,6"/>
+                                           TextTrimming="CharacterEllipsis"  TextWrapping="NoWrap" Margin="50,0,0,6"/>
                             </Grid>
                             <Grid>
                                 <TextBlock FontSize="14" Text="Tác giả: " FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
@@ -74,7 +74,6 @@
                                 <TextBlock FontSize="14" Text="{x:Bind singer}" FontFamily="Segoe UI" FontWeight="Normal" Style="{ThemeResource BodyTextBlockStyle}"
                                            TextTrimming="CharacterEllipsis" Width="350" TextWrapping="NoWrap" Margin="60,0,0,6"/>
                             </Grid>
-
                         </StackPanel>
                         
                     </Grid>
@@ -108,7 +107,8 @@
                     <RowDefinition Height="30*"/>
                 </Grid.RowDefinitions>
                 <Image Source="/Images/logoAppMusiz.png" Width="80" Grid.Row="1" HorizontalAlignment="Center"/>
-                <TextBlock Text="GunnerMuzik" Grid.Row="2" HorizontalAlignment="Center"/>
+                <TextBlock Text="GunnerMuzik" FontWeight="SemiLight" 
+                           FontFamily="Berlin Sans FB" Grid.Row="2" FontSize="16" HorizontalAlignment="Center"/>
                 <Image Source="/Images/loginGif.gif" Grid.Row="1" HorizontalAlignment="Left"/>
                 <Image Source="/Images/loginGif.gif" Grid.Row="1" HorizontalAlignment="Right"/>
                 <Image Source="/Images/loginGif.gif" Grid.Row="2" Margin="0,0,150,0" HorizontalAlignment="Right"/>

@@ -110,7 +110,7 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Grid.Column="0">
                 <PasswordBox x:ConnectionId='14'  CornerRadius="15" Header="Mật khẩu:" x:Name="txtPassword" HorizontalAlignment="Left" Width="300" />
-                <TextBlock x:ConnectionId='15' x:Name="errorPassword" Visibility="Visible"  Text="* Mật khẩu không được để trống" Foreground="Red" FontSize="12" Margin="0,60,-1,-17"/>
+                <TextBlock x:ConnectionId='15' x:Name="errorPassword" Visibility="Collapsed"  Text="* Mật khẩu không được để trống" Foreground="Red" FontSize="12" Margin="0,60,-1,-17"/>
             </Grid>
             <Grid Grid.Row="0" Grid.Column="1">
                 <PasswordBox x:ConnectionId='12'  CornerRadius="15" Header="Xác Nhận Mật khẩu:" x:Name="txtConfirmPassword" HorizontalAlignment="Right" Width="300" />

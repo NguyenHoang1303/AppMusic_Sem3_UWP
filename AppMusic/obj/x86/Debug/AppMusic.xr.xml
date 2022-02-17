@@ -138,6 +138,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="FontFamily" />
@@ -148,11 +149,11 @@
       <RootProperty Name="Background" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Width" />
+      <RootProperty Name="CornerRadius" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Opacity" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="CornerRadius" />
       <RootProperty Name="Height" />
       <RootProperty Name="Header" />
       <RootProperty Name="Margin" />

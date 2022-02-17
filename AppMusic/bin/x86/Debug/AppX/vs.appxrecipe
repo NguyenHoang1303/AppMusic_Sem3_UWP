@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>CAF374AE25B0745A5B18E424454CBBBBA3A0C19377ED730C8B8B90D2926CF539</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>4CF35407479B224748C0CB3DE0F45B711F5058EA3A3C391341639F98BE854352</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>cc71cb05-29dc-42c3-a6f8-b0666d485e05_1.0.0.0_x86__9bmxhb7zwesw4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>cc71cb05-29dc-42c3-a6f8-b0666d485e05_9bmxhb7zwesw4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>cc71cb05-29dc-42c3-a6f8-b0666d485e05</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-17T09:44:38.458</Modified>
+      <Modified>2022-02-17T11:33:46.987</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\AppMusic.exe">
       <PackagePath>entrypoint\AppMusic.exe</PackagePath>
-      <Modified>2022-02-17T09:44:37.911</Modified>
+      <Modified>2022-02-17T11:33:44.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\.nuget\packages\cloudinarydotnet\1.17.0\lib\netstandard2.0\CloudinaryDotNet.dll">
       <PackagePath>CloudinaryDotNet.dll</PackagePath>
@@ -106,6 +106,181 @@
       <PackagePath>aspnet-mvc.gitignore</PackagePath>
       <Modified>2022-02-14T18:26:18.301</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+      <Modified>2022-02-17T11:09:37.962</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\BadgeLogo.scale-125.png">
+      <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
+      <Modified>2022-02-17T11:09:37.975</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\BadgeLogo.scale-150.png">
+      <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
+      <Modified>2022-02-17T11:09:38.009</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\BadgeLogo.scale-200.png">
+      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
+      <Modified>2022-02-17T11:09:38.020</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\BadgeLogo.scale-400.png">
+      <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
+      <Modified>2022-02-17T11:09:38.044</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:15.521</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:15.579</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:15.639</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:16.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:50.290</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:50.309</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:50.332</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:50.414</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.699</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.708</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.751</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.717</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.727</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.690</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.656</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.666</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.511</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.525</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.558</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.570</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.581</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.626</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.593</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:15:26.603</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:03:12.400</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:03:12.410</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:03:12.421</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:03:12.434</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-17T11:03:12.453</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Images\kindpng_405269.png">
       <PackagePath>Images\kindpng_405269.png</PackagePath>
       <Modified>2022-02-17T04:19:22.390</Modified>
@@ -137,27 +312,22 @@
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-11T12:02:36.144</Modified>
+      <Modified>2022-02-17T11:15:15.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-11T12:02:36.145</Modified>
+      <Modified>2022-02-17T11:15:50.354</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-11T12:02:36.145</Modified>
+      <Modified>2022-02-17T11:15:26.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-11T12:02:36.146</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-11T12:02:36.147</Modified>
+      <Modified>2022-02-17T11:15:26.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
@@ -210,43 +380,43 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\AppMusic.xr.xml">
       <PackagePath>AppMusic.xr.xml</PackagePath>
-      <Modified>2022-02-17T09:40:15.538</Modified>
+      <Modified>2022-02-17T11:33:44.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-02-17T09:44:37.798</Modified>
+      <Modified>2022-02-17T11:33:44.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-02-17T09:44:37.799</Modified>
+      <Modified>2022-02-17T11:33:44.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\AccountInfo\Index.xbf">
       <PackagePath>Pages\AccountInfo\Index.xbf</PackagePath>
-      <Modified>2022-02-17T09:44:37.760</Modified>
+      <Modified>2022-02-17T11:33:44.428</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\AppMs.xbf">
       <PackagePath>Pages\AppMs.xbf</PackagePath>
-      <Modified>2022-02-17T09:44:37.800</Modified>
+      <Modified>2022-02-17T11:33:44.530</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\CreatSong\Index.xbf">
       <PackagePath>Pages\CreatSong\Index.xbf</PackagePath>
-      <Modified>2022-02-17T09:44:37.776</Modified>
+      <Modified>2022-02-17T11:33:44.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\ListSong\Index.xbf">
       <PackagePath>Pages\ListSong\Index.xbf</PackagePath>
-      <Modified>2022-02-17T09:44:37.781</Modified>
+      <Modified>2022-02-17T11:33:44.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\Login\Index.xbf">
       <PackagePath>Pages\Login\Index.xbf</PackagePath>
-      <Modified>2022-02-17T09:44:37.786</Modified>
+      <Modified>2022-02-17T11:33:44.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\MyListSong\Index.xbf">
       <PackagePath>Pages\MyListSong\Index.xbf</PackagePath>
-      <Modified>2022-02-17T09:44:37.790</Modified>
+      <Modified>2022-02-17T11:33:44.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Pages\Register\Index.xbf">
       <PackagePath>Pages\Register\Index.xbf</PackagePath>
-      <Modified>2022-02-17T09:44:37.798</Modified>
+      <Modified>2022-02-17T11:33:44.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -254,11 +424,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-17T04:31:11.037</Modified>
+      <Modified>2022-02-17T11:15:56.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\LaptopAZ.vn\Desktop\AppMusic\AppMusic\bin\x86\Debug\Core\AppMusic.exe">
       <PackagePath>AppMusic.exe</PackagePath>
-      <Modified>2022-02-17T09:44:38.454</Modified>
+      <Modified>2022-02-17T11:33:46.969</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

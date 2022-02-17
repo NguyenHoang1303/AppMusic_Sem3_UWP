@@ -6,8 +6,8 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using Windows.Media.Core;
 using Windows.Media.Playback;
-using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -74,9 +74,9 @@ namespace AppMusic.Pages.MyListSong
                         contentDialog.Title = "Fail!";
                         contentDialog.Content = "Bài hát lỗi!";
                     }
-                    
+
                 }
-                
+
             }
         }
     }

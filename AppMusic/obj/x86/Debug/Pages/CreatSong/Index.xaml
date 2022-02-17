@@ -61,6 +61,7 @@
                          x:Name="txtName"
                              FontWeight="Light"
                              FontSize="18"
+                                 CornerRadius="15"
                              HorizontalAlignment="Right"
                              Foreground="White"
                              Background="Transparent"
@@ -68,12 +69,12 @@
                              Width="350"
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"/>
-                        <Border Width="350"
+                        <Border Width="340"
                     VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Height="2"
                         Background="White"
-                        Opacity="0.5" Margin="0,0,0,5"/>
+                        Opacity="0.5" Margin="0,0,5,5"/>
                     </Grid>
                     <TextBlock x:ConnectionId='4' x:Name="errName" Text="* Nhập tên bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
 
@@ -88,14 +89,15 @@
                              Background="Transparent"
                              BorderThickness="0"
                              Width="350"
+                                 CornerRadius="15"
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"/>
-                        <Border Width="350"
+                        <Border Width="340"
                     VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Height="2"
                         Background="White"
-                        Opacity="0.5" Margin="0,0,0,5"/>
+                        Opacity="0.5" Margin="0,0,5,5"/>
                     </Grid>
                     <TextBlock x:ConnectionId='5' x:Name="errDescription" Text="* Nhâp mô tả bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
 
@@ -110,14 +112,15 @@
                              Background="Transparent"
                              BorderThickness="0"
                              Width="350"
+                                 CornerRadius="15"
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"/>
-                        <Border Width="350"
+                        <Border Width="340"
                     VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Height="2"
                         Background="White"
-                        Opacity="0.5" Margin="0,0,0,5"/>
+                        Opacity="0.5" Margin="0,0,5,5"/>
                     </Grid>
                     <TextBlock x:ConnectionId='6' x:Name="errSinger" Text="* Nhâp ca sĩ trình bày" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
 
@@ -132,14 +135,15 @@
                              Background="Transparent"
                              BorderThickness="0"
                              Width="350"
+                                 CornerRadius="15"
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"/>
-                        <Border Width="350"
+                        <Border Width="340"
                     VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Height="2"
                         Background="White"
-                        Opacity="0.5" Margin="0,0,0,5"/>
+                        Opacity="0.5" Margin="0,0,5,5"/>
                     </Grid>
                     <TextBlock x:ConnectionId='7' x:Name="errAuthor" Text="* Nhâp tác giả bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
 
@@ -168,14 +172,15 @@
                              Background="Transparent"
                              BorderThickness="0"
                              Width="350"
+                                 CornerRadius="15"
                              HorizontalContentAlignment="Left"
                              Opacity="0.5"/>
-                        <Border Width="350"
+                        <Border Width="340"
                     VerticalAlignment="Bottom"
                         HorizontalAlignment="Right"
                         Height="2"
                         Background="White"
-                        Opacity="0.5" Margin="0,0,0,5"/>
+                        Opacity="0.5" Margin="0,0,5,5"/>
                     </Grid>
                     <TextBlock x:ConnectionId='9' x:Name="errLink" Text="* Nhâp link bài hát" Visibility="Collapsed" HorizontalTextAlignment="Center" Margin="-90,0,0,0" FontSize="13" Foreground="Red"/>
                 </StackPanel>

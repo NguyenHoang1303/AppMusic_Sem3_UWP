@@ -20,7 +20,7 @@
                 <Image Source="/Images/logoAppMusiz.png" HorizontalAlignment="Left" Margin="114,0,0,0" Tag="logo"/>
             </NavigationViewItem>
             <NavigationViewItem Tag="name" >
-                <TextBlock Text="GunnerMusiz" Margin="94,-20,-94,0" FontWeight="SemiLight" 
+                <TextBlock Text="GunnerMuzik" Margin="94,-20,-94,0" FontWeight="SemiLight" 
                            FontFamily="Berlin Sans FB"/>
             </NavigationViewItem>
             <NavigationViewItem x:Name="ListSongNav" Icon="Audio" Content="Danh sách bài hát" Tag="ListSong" />
